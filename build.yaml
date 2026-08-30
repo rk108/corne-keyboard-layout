@@ -13,9 +13,9 @@
 #
 ---
 include:
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: corne_central_left
     artifact-name: corne_left
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: corne_peripheral_right
     artifact-name: corne_right
