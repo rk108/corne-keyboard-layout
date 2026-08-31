@@ -126,7 +126,7 @@
         };
 
         EscButton {
-            bindings = <&kp COMMA>;
+            bindings = <&kp ESC>;
             key-positions = <0 1>;
             timeout-ms = <20>;
         };
