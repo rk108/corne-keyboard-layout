@@ -118,10 +118,14 @@
         //    key-positions = <39 41>;
         //    timeout-ms = <20>;
         //}
-
+        TildaSign2 {
+            bindings = <&kp TILDE>;
+            key-positions = <0 1>;
+            timeout-ms = <20>;
+        };
         EqSign {
             bindings = <&kp EQUAL>;
-            key-positions = <1 3>;
+            key-positions = <1 2>;
             timeout-ms = <20>;
         };
 
@@ -129,6 +133,18 @@
             bindings = <&kp ESC>;
             key-positions = <0 1>;
             timeout-ms = <20>;
+        };
+        EnterCombo {
+            bindings = <&kp RET>;
+            key-positions = <22 23>;
+            timeout-ms = <20>;
+        };
+
+        ShiftCombo {
+            bindings = <&kp LSHIFT>;
+            key-positions = <33 34 35>;
+            timeout-ms = <50>;
+            slow-release;
         };
 
         //Dot {
@@ -149,11 +165,7 @@
             timeout-ms = <20>;
         };
 
-        TildaSign2 {
-            bindings = <&kp TILDE>;
-            key-positions = <1 2>;
-            timeout-ms = <20>;
-        };
+
 
         GraveSign {
             bindings = <&kp GRAVE>;
@@ -203,13 +215,13 @@
                 default_layer {
                         bindings = <
             // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                  &kp ESC       &kp Q         &kp W         &kp E        &kp R         &kp T              &kp Y         &kp U         &kp I         &kp O         &kp P         &lt FLR LEFT_BRACKET
+                  &kp ESC       &kp Q         &kp W         &kp E        &kp R         &kp T              &kp Y         &kp U         &kp I         &kp O         &kp P         &lt FLR BSPC
             // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                  &kp TAB       &kp A         &kp S         &kp D        &tdF          &kp G              &kp H         &tdJ          &kp K         &kp L         &kp SEMI      &kp SQT
+                  &kp TAB       &kp A         &kp S         &kp D        &tdF          &kp G              &kp H         &tdJ          &kp K         &kp L         &kp SEMI      &kp RET
             // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                  &kp LSHFT     &kp Z         &kp X         &kp C        &kp V         &kp B              &kp N         &kp M         &kp COMMA     &kp DOT       &kp FSLH      &mt RALT RIGHT_BRACKET
+                  &kp LSHFT     &kp Z         &kp X         &kp C        &kp V         &kp B              &kp N         &kp M         &kp COMMA     &kp DOT       &kp FSLH      &mt RALT LSHIFT
             // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
-                                                            &kp LCTRL     &mo 1        &mt LGUI RET     &lt RSE SPACE   &kp BSPC     &kp LSHIFT
+                                                            &kp LCTRL     &mo 1       &mt LGUI SPACE    &lt RSE SPACE   &kp BSPC     &kp LSHIFT
             //                                           ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
                         >;
                 };
