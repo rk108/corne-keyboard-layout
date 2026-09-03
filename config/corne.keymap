@@ -123,12 +123,26 @@
             key-positions = <0 1>;
             timeout-ms = <20>;
         };
-        EqSign {
+        EqSign1 {
             bindings = <&kp EQUAL>;
+            key-positions = <14 15>;
+            timeout-ms = <20>;
+        };
+        EqSign2 {
+            bindings = <&kp EQUAL>;
+            key-positions = <20 21>;
+            timeout-ms = <20>;
+        };
+        EqSign3 {
+            bindings = <&kp PIPE>;
+            key-positions = <9 10>;
+            timeout-ms = <20>;
+        };
+        ExclamationSign {
+            bindings = <&kp EXCL>;
             key-positions = <1 2>;
             timeout-ms = <20>;
         };
-
         EscButton {
             bindings = <&kp ESC>;
             key-positions = <0 1>;
@@ -142,7 +156,7 @@
 
         ShiftCombo {
             bindings = <&kp LSHIFT>;
-            key-positions = <33 34 35>;
+            key-positions = <34 35>;
             timeout-ms = <50>;
             slow-release;
         };
@@ -219,9 +233,9 @@
             // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                   &kp TAB       &kp A         &kp S         &kp D        &tdF          &kp G              &kp H         &tdJ          &kp K         &kp L         &kp SEMI      &kp RET
             // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                  &kp LSHFT     &kp Z         &kp X         &kp C        &kp V         &kp B              &kp N         &kp M         &kp COMMA     &kp DOT       &kp FSLH      &mt RALT LSHIFT
+                  &kp LCTRL     &kp Z         &kp X         &kp C        &kp V         &kp B              &kp N         &kp M         &kp COMMA     &kp DOT       &kp FSLH      &mt RALT LSHIFT
             // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
-                                                            &kp LCTRL     &mo 1       &mt LGUI SPACE    &lt RSE SPACE   &kp BSPC     &kp LSHIFT
+                                                            &kp LSHIFT     &mo 1       &mt LGUI SPACE    &lt RSE SPACE   &kp BSPC     &kp LSHIFT
             //                                           ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
                         >;
                 };
@@ -234,20 +248,20 @@
             // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                   &kp LSHFT      &trans         &trans        &trans      &kp LG(F11)   &kp LG(F12)         &trans       &trans         &trans        &trans        &trans       &kp F14
             // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
-                                                             &mo ADJ        &trans       &kp LGUI         &kp RET        &kp TAB      &kp LSHIFT
+                                                             &mo ADJ        &trans       &kp LGUI       &mt LGUI  RET    &kp TAB      &kp LSHIFT
             //                                           ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
                         >;
                 };
                 raise_layer {
                         bindings = <
             // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                   &trans         &trans     &kp PG_UP      &kp UP        &kp PG_DN     &kp HOME          &kp CARET     &kp PG_UP     &kp UP        &kp PG_DN     &kp HOME     &kp F17
+                   &trans         &trans     &kp PG_UP      &kp UP        &kp PG_DN     &kp HOME          &kp CARET     &kp PG_UP     &kp UP        &kp PG_DN     &kp HOME     &kp BSPC
             // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                   &trans         &trans     &kp LEFT       &kp DOWN      &kp RIGHT     &kp END           &kp MINUS     &kp LEFT      &kp DOWN      &kp RIGHT     &kp END      &kp F18
+                   &trans         &trans     &kp LEFT       &kp DOWN      &kp RIGHT     &kp END           &kp MINUS     &kp LEFT      &kp DOWN      &kp RIGHT     &kp END      &kp RET
             // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                 &out OUT_TOG     &trans     &trans         &trans        &trans        &kp F15           &kp F16       &kp F23       &trans        &trans        &trans       &out OUT_TOG
+                 &out OUT_TOG     &trans     &trans         &trans          &kp V        &kp F15          &kp F16       &kp F23       &trans        &trans        &trans       &out OUT_TOG
             // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
-                                                              &trans     &kp LG(F11)   &kp LG(F12)            &trans        &trans        &trans
+                                                              &trans     &kp LS(TAB)     &kp TAB           &trans        &trans        &trans
             //                                           ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
                         >; 
                 };
