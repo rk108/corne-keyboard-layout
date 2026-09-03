@@ -50,49 +50,49 @@
         ParaLeft {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <4 5>;
-            timeout-ms = <20>;
+            timeout-ms = <30>;
         };
 
         ParaRight {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <6 7>;
-            timeout-ms = <20>;
+            timeout-ms = <30>;
         };
 
         BrakLeft {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <16 17>;
-            timeout-ms = <20>;
+            timeout-ms = <30>;
         };
 
         BrakRight {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <18 19>;
-            timeout-ms = <20>;
+            timeout-ms = <30>;
         };
 
         BraceLeft {
             bindings = <&kp LEFT_BRACE>;
             key-positions = <28 29>;
-            timeout-ms = <20>;
+            timeout-ms = <30>;
         };
 
         BraceRight {
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <30 31>;
-            timeout-ms = <20>;
+            timeout-ms = <30>;
         };
 
         DoubleQuote {
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <15 16>;
-            timeout-ms = <20>;
+            timeout-ms = <30>;
         };
 
         SingleQuote {
             bindings = <&kp APOSTROPHE>;
             key-positions = <19 20>;
-            timeout-ms = <20>;
+            timeout-ms = <30>;
         };
 
         //LangRu {
@@ -121,32 +121,32 @@
         TildaSign2 {
             bindings = <&kp TILDE>;
             key-positions = <0 1>;
-            timeout-ms = <20>;
+            timeout-ms = <30>;
         };
         EqSign1 {
             bindings = <&kp EQUAL>;
             key-positions = <14 15>;
-            timeout-ms = <20>;
+            timeout-ms = <30>;
         };
         EqSign2 {
             bindings = <&kp EQUAL>;
             key-positions = <20 21>;
-            timeout-ms = <20>;
+            timeout-ms = <30>;
         };
         EqSign3 {
-            bindings = <&kp PIPE>;
+            bindings = <&kp EQUAL>;
             key-positions = <9 10>;
-            timeout-ms = <20>;
+            timeout-ms = <30>;
         };
         ExclamationSign {
             bindings = <&kp EXCL>;
             key-positions = <1 2>;
-            timeout-ms = <20>;
+            timeout-ms = <30>;
         };
         EscButton {
             bindings = <&kp ESC>;
             key-positions = <0 1>;
-            timeout-ms = <20>;
+            timeout-ms = <30>;
         };
         EnterCombo {
             bindings = <&kp RET>;
@@ -157,7 +157,7 @@
         ShiftCombo {
             bindings = <&kp LSHIFT>;
             key-positions = <34 35>;
-            timeout-ms = <50>;
+            timeout-ms = <30>;
             slow-release;
         };
 
@@ -176,7 +176,7 @@
         TildaSign1 {
             bindings = <&kp TILDE>;
             key-positions = <0 12>;
-            timeout-ms = <20>;
+            timeout-ms = <30>;
         };
 
 
@@ -184,31 +184,31 @@
         GraveSign {
             bindings = <&kp GRAVE>;
             key-positions = <12 24>;
-            timeout-ms = <20>;
+            timeout-ms = <30>;
         };
 
         MinusSign {
             bindings = <&kp MINUS>;
             key-positions = <3 4>;
-            timeout-ms = <20>;
+            timeout-ms = <30>;
         };
 
         PlusSign {
             bindings = <&kp PLUS>;
             key-positions = <2 3>;
-            timeout-ms = <20>;
+            timeout-ms = <30>;
         };
 
         UnderscoreSign {
             bindings = <&kp UNDERSCORE>;
             key-positions = <7 8>;
-            timeout-ms = <20>;
+            timeout-ms = <30>;
         };
 
         PipeSign {
             bindings = <&kp PIPE>;
             key-positions = <8 9>;
-            timeout-ms = <20>;
+            timeout-ms = <30>;
         };
         Mainbootloaderleft {
             bindings = <&bootloader>;
@@ -246,7 +246,7 @@
             // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                   &kp GRAVE      &kp EXCL       &kp AT       &kp HASH      &kp DLLR     &kp PRCNT         &kp CARET     &kp AMPS      &kp ASTRK      &kp LPAR      &kp RPAR      &kp F18
             // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                  &kp LSHFT      &trans         &trans        &trans      &kp LG(F11)   &kp LG(F12)         &trans       &trans         &trans        &trans        &trans       &kp F14
+                  &kp LSHFT      &trans         &trans        &trans        &kp LT       &kp GT             &trans       &trans         &trans        &trans        &trans       &kp F14
             // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
                                                              &mo ADJ        &trans       &kp LGUI       &mt LGUI  RET    &kp TAB      &kp LSHIFT
             //                                           ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
