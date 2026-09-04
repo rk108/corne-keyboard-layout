@@ -123,16 +123,16 @@
             key-positions = <0 1>;
             timeout-ms = <30>;
         };
-        EqSign1 {
-            bindings = <&kp EQUAL>;
-            key-positions = <14 15>;
-            timeout-ms = <30>;
-        };
-        EqSign2 {
-            bindings = <&kp EQUAL>;
-            key-positions = <20 21>;
-            timeout-ms = <30>;
-        };
+        //EqSign1 {
+        //    bindings = <&kp EQUAL>;
+        //    key-positions = <14 15>;
+        //    timeout-ms = <30>;
+        //};
+        //EqSign2 {
+        //    bindings = <&kp EQUAL>;
+        //    key-positions = <20 21>;
+        //    timeout-ms = <30>;
+        //};
         EqSign3 {
             bindings = <&kp EQUAL>;
             key-positions = <9 10>;
@@ -154,13 +154,30 @@
             timeout-ms = <20>;
         };
 
-        ShiftCombo {
+        ShiftCombo1 {
             bindings = <&kp LSHIFT>;
             key-positions = <34 35>;
             timeout-ms = <30>;
             slow-release;
         };
-
+        ShiftCombo2 {
+            bindings = <&kp LSHIFT>;
+            key-positions = <24 25>;
+            timeout-ms = <30>;
+            slow-release;
+        };
+        BackspaceCombo {
+            bindings = <&kp BSPC>;
+            key-positions = <10 11>;
+            timeout-ms = <30>;
+            slow-release;
+        };
+        CapsCombo {
+            bindings = <&kp CAPSLOCK>;
+            key-positions = <12 13>;
+            timeout-ms = <30>;
+            slow-release;
+        };
         //Dot {
         //    bindings = <&kp DOT>;
         //    key-positions = <32 33>;
@@ -229,11 +246,11 @@
                 default_layer {
                         bindings = <
             // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                  &kp ESC       &kp Q         &kp W         &kp E        &kp R         &kp T              &kp Y         &kp U         &kp I         &kp O         &kp P         &lt FLR BSPC
+                  &kp ESC       &kp Q         &kp W         &kp E        &kp R         &kp T              &kp Y         &kp U         &kp I         &kp O         &kp P         &lt FLR LEFT_BRACKET
             // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                  &kp TAB       &kp A         &kp S         &kp D        &tdF          &kp G              &kp H         &tdJ          &kp K         &kp L         &kp SEMI      &kp RET
+                  &kp TAB       &kp A         &kp S         &kp D        &tdF          &kp G              &kp H         &tdJ          &kp K         &kp L      &mt COLON SEMI    &kp SQT
             // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                  &kp LCTRL     &kp Z         &kp X         &kp C        &kp V         &kp B              &kp N         &kp M         &kp COMMA     &kp DOT       &kp FSLH      &mt RALT LSHIFT
+                  &kp LCTRL     &kp Z         &kp X         &kp C        &kp V         &kp B              &kp N         &kp M         &kp COMMA     &kp DOT       &kp FSLH      &mt RALT RIGHT_BRACKET
             // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
                                                             &kp LSHIFT     &mo 1       &mt LGUI SPACE    &lt RSE SPACE   &kp BSPC     &kp LSHIFT
             //                                           ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
