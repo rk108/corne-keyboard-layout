@@ -21,27 +21,27 @@
 
 / {
     behaviors {
-        tdF: tap_dance_lang1 {
+        tdI: tap_dance_lang1 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <160>;
-            bindings = <&kp F>, <&kp RALT>;
+            tapping-term-ms = <180>;
+            bindings = <&kp I>, <&kp RALT>;
         };
-        tdJ: tap_dance_lang2 {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <160>;
-            bindings = <&kp J>, <&kp RALT>;
-        };
-        lh_pht: left_positional_hold_tap {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-unless-interrupted";
-            tapping-term-ms = <100>;                        // <---[[produces tap if held longer than tapping-term-ms]]
-            quick-tap-ms = <200>;
-            bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = <0 1 2 3 4 5>;    // <---[[right-hand keys]]
-        };
+        //tdJ: tap_dance_lang2 {
+        //    compatible = "zmk,behavior-tap-dance";
+        //    #binding-cells = <0>;
+        //    tapping-term-ms = <160>;
+        //    bindings = <&kp J>, <&kp RALT>;
+        //};
+        //lh_pht: left_positional_hold_tap {
+        //    compatible = "zmk,behavior-hold-tap";
+        //    #binding-cells = <2>;
+        //    flavor = "tap-unless-interrupted";
+        //    tapping-term-ms = <100>;                        // <---[[produces tap if held longer than tapping-term-ms]]
+        //    quick-tap-ms = <200>;
+        //    bindings = <&kp>, <&kp>;
+        //    hold-trigger-key-positions = <0 1 2 3 4 5>;    // <---[[right-hand keys]]
+        //};
     };
 
     combos {
@@ -50,49 +50,49 @@
         ParaLeft {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <4 5>;
-            timeout-ms = <30>;
+            timeout-ms = <40>;
         };
 
         ParaRight {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <6 7>;
-            timeout-ms = <30>;
+            timeout-ms = <40>;
         };
 
         BrakLeft {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <16 17>;
-            timeout-ms = <30>;
+            timeout-ms = <40>;
         };
 
         BrakRight {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <18 19>;
-            timeout-ms = <30>;
+            timeout-ms = <40>;
         };
 
         BraceLeft {
             bindings = <&kp LEFT_BRACE>;
             key-positions = <28 29>;
-            timeout-ms = <30>;
+            timeout-ms = <40>;
         };
 
         BraceRight {
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <30 31>;
-            timeout-ms = <30>;
+            timeout-ms = <40>;
         };
 
         DoubleQuote {
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <15 16>;
-            timeout-ms = <30>;
+            timeout-ms = <40>;
         };
 
         SingleQuote {
             bindings = <&kp APOSTROPHE>;
             key-positions = <19 20>;
-            timeout-ms = <30>;
+            timeout-ms = <40>;
         };
 
         //LangRu {
@@ -121,7 +121,7 @@
         TildaSign2 {
             bindings = <&kp TILDE>;
             key-positions = <0 1>;
-            timeout-ms = <30>;
+            timeout-ms = <40>;
         };
         //EqSign1 {
         //    bindings = <&kp EQUAL>;
@@ -136,47 +136,47 @@
         EqSign3 {
             bindings = <&kp EQUAL>;
             key-positions = <9 10>;
-            timeout-ms = <30>;
+            timeout-ms = <40>;
         };
         ExclamationSign {
             bindings = <&kp EXCL>;
             key-positions = <1 2>;
-            timeout-ms = <30>;
+            timeout-ms = <40>;
         };
-        EscButton {
-            bindings = <&kp ESC>;
-            key-positions = <0 1>;
-            timeout-ms = <30>;
-        };
+        //EscButton {
+        //    bindings = <&kp ESC>;
+        //    key-positions = <0 1>;
+        //    timeout-ms = <30>;
+        //};
         EnterCombo {
             bindings = <&kp RET>;
             key-positions = <22 23>;
-            timeout-ms = <20>;
+            timeout-ms = <40>;
         };
 
         ShiftCombo1 {
             bindings = <&kp LSHIFT>;
             key-positions = <34 35>;
-            timeout-ms = <30>;
+            timeout-ms = <40>;
             slow-release;
         };
         ShiftCombo2 {
             bindings = <&kp LSHIFT>;
             key-positions = <24 25>;
-            timeout-ms = <30>;
+            timeout-ms = <40>;
             slow-release;
         };
         BackspaceCombo {
             bindings = <&kp BSPC>;
             key-positions = <10 11>;
-            timeout-ms = <30>;
-            slow-release;
+            timeout-ms = <40>;
+            //slow-release;
         };
         CapsCombo {
             bindings = <&kp CAPSLOCK>;
             key-positions = <12 13>;
-            timeout-ms = <30>;
-            slow-release;
+            timeout-ms = <40>;
+            //slow-release;
         };
         //Dot {
         //    bindings = <&kp DOT>;
@@ -190,53 +190,54 @@
         //    timeout-ms = <20>;
         //};
 
-        TildaSign1 {
-            bindings = <&kp TILDE>;
-            key-positions = <0 12>;
-            timeout-ms = <30>;
-        };
+        //TildaSign1 {
+        //    bindings = <&kp TILDE>;
+        //    key-positions = <0 12>;
+        //    timeout-ms = <30>;
+        //};
 
 
 
-        GraveSign {
-            bindings = <&kp GRAVE>;
-            key-positions = <12 24>;
-            timeout-ms = <30>;
-        };
+        //GraveSign {
+        //    bindings = <&kp GRAVE>;
+        //    key-positions = <12 24>;
+        //    timeout-ms = <30>;
+        //};
 
         MinusSign {
             bindings = <&kp MINUS>;
             key-positions = <3 4>;
-            timeout-ms = <30>;
+            timeout-ms = <40>;
         };
 
         PlusSign {
             bindings = <&kp PLUS>;
             key-positions = <2 3>;
-            timeout-ms = <30>;
+            timeout-ms = <40>;
         };
 
         UnderscoreSign {
             bindings = <&kp UNDERSCORE>;
             key-positions = <7 8>;
-            timeout-ms = <30>;
+            timeout-ms = <40>;
         };
 
         PipeSign {
             bindings = <&kp PIPE>;
             key-positions = <8 9>;
-            timeout-ms = <30>;
+            timeout-ms = <40>;
         };
-        Mainbootloaderleft {
-            bindings = <&bootloader>;
-            key-positions = <0 4>;
-            timeout-ms = <20>;
-        };
-        Mainbootloaderright {
-            bindings = <&bootloader>;
-            key-positions = <7 11>;
-            timeout-ms = <20>;
-        };
+
+        //Mainbootloaderleft {
+        //    bindings = <&bootloader>;
+        //    key-positions = <0 4>;
+        //    timeout-ms = <20>;
+        //};
+        //Mainbootloaderright {
+        //    bindings = <&bootloader>;
+        //    key-positions = <7 11>;
+        //    timeout-ms = <20>;
+        //};
     };
 };
 / {
@@ -246,11 +247,11 @@
                 default_layer {
                         bindings = <
             // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                  &kp ESC       &kp Q         &kp W         &kp E        &kp R         &kp T              &kp Y         &kp U         &kp I         &kp O         &kp P         &lt FLR LEFT_BRACKET
+                  &mt LALT ESC  &kp Q         &kp W         &kp E        &kp R         &kp T              &kp Y         &kp U         &kp I         &kp O         &kp P         &lt FLR LEFT_BRACKET
             // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                   &kp TAB       &kp A         &kp S         &kp D        &tdF          &kp G              &kp H         &tdJ          &kp K         &kp L      &mt COLON SEMI    &kp SQT
             // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                  &kp LCTRL     &kp Z         &kp X         &kp C        &kp V         &kp B              &kp N         &kp M         &kp COMMA     &kp DOT       &kp FSLH      &mt RALT RIGHT_BRACKET
+                  &kp LCTRL     &kp Z         &kp X         &kp C        &kp V         &kp B              &kp N         &kp M         &kp COMMA     &kp DOT   &mt BACKSLASH FSLH  &mt RALT RIGHT_BRACKET
             // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
                                                             &kp LSHIFT     &mo 1       &mt LGUI SPACE    &lt RSE SPACE   &kp BSPC     &kp LSHIFT
             //                                           ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
@@ -259,13 +260,13 @@
                 lower_layer {
                         bindings = <
             // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                  &kp TILDE      &kp N1         &kp N2        &kp N3        &kp N4        &kp N5            &kp N6        &kp N7        &kp N8        &kp N9        &kp N0       &kp F17
+                  &kp TILDE      &kp N1         &kp N2        &kp N3        &kp N4        &kp N5            &kp N6        &kp N7        &kp N8        &kp N9        &kp N0       &kp EQUAL
             // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                  &kp GRAVE      &kp EXCL       &kp AT       &kp HASH      &kp DLLR     &kp PRCNT         &kp CARET     &kp AMPS      &kp ASTRK      &kp LPAR      &kp RPAR      &kp F18
+                  &kp GRAVE      &kp EXCL       &kp AT       &kp HASH      &kp DLLR     &kp PRCNT         &kp CARET     &kp AMPS      &kp ASTRK      &kp LPAR      &kp RPAR      &kp BACKSLASH
             // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                  &kp LSHFT      &trans         &trans        &trans        &kp LT       &kp GT             &trans       &trans         &trans        &trans        &trans       &kp F14
+                  &kp LCTRL      &trans         &trans        &kp LT      &kp MINUS       &kp GT             &trans       &trans         &trans        &trans        &trans       &kp LALT
             // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
-                                                             &mo ADJ        &trans       &kp LGUI       &mt LGUI  RET    &kp TAB      &kp LSHIFT
+                                                             &mo ADJ        &trans       &kp LGUI       &mt LGUI  RET  &mt LS(LGUI) TAB   &kp LSHIFT
             //                                           ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
                         >;
                 };
@@ -276,7 +277,7 @@
             // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                    &trans         &trans     &kp LEFT       &kp DOWN      &kp RIGHT     &kp END           &kp MINUS     &kp LEFT      &kp DOWN      &kp RIGHT     &kp END      &kp RET
             // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                 &out OUT_TOG     &trans     &trans         &trans          &kp V        &kp F15          &kp F16       &kp F23       &trans        &trans        &trans       &out OUT_TOG
+                 &out OUT_TOG     &trans     &trans         &trans          &trans       &kp F15          &kp F16       &kp F23       &trans        &trans        &trans       &out OUT_TOG
             // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
                                                               &trans     &kp LS(TAB)     &kp TAB           &trans        &trans        &trans
             //                                           ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
