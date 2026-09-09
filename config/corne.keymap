@@ -24,7 +24,7 @@
         tdI: tap_dance_lang1 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <180>;
+            tapping-term-ms = <210>;
             bindings = <&kp I>, <&kp RALT>;
         };
         //tdJ: tap_dance_lang2 {
@@ -148,12 +148,16 @@
         //    key-positions = <0 1>;
         //    timeout-ms = <30>;
         //};
-        EnterCombo {
+        EnterCombo1 {
             bindings = <&kp RET>;
             key-positions = <22 23>;
             timeout-ms = <40>;
         };
-
+        EnterCombo2 {
+            bindings = <&kp RET>;
+            key-positions = <31 32>;
+            timeout-ms = <40>;
+        };
         ShiftCombo1 {
             bindings = <&kp LSHIFT>;
             key-positions = <34 35>;
